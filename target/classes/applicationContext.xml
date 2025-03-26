@@ -10,5 +10,9 @@
           class="spring.learn.Cat">
 
     </bean>
-
+    <bean
+        id = "myPerson"
+        class = "spring.learn.Person">
+        <constructor-arg ref="myPet"/>
+    </bean>
 </beans>
